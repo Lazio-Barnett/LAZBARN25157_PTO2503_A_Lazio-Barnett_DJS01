@@ -1,25 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PodcastApp</title>
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <header class="header">
-    <h1 class="brand">🎙️ PodcastApp</h1>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>🎙️ Podcast</title>
 
-  <main>
-    <h2 id="listHeading" class="sr-only">Podcast Shows</h2>
-    <div id="cards" class="grid" role="list" aria-labelledby="listHeading"></div>
-  </main>
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1 class="site-brand">🎙️ PodcastApp</h1>
+    </header>
 
-  <!-- Modal mount point -->
-  <div id="modal-root"></div>
+    <main>
+      <h2 id="shows-heading" class="visually-hidden">Podcast shows</h2>
+      <section
+        id="cards"
+        class="cards-grid"
+        role="list"
+        aria-labelledby="shows-heading"
+      ></section>
+    </main>
 
-  <script type="module" src="./main.js"></script>
-</body>
+    <!-- modal mount point -->
+    <div id="modal-root" aria-hidden="true"></div>
+
+    <!-- app entry -->
+    <script type="module" src="./main.js"></script>
+  </body>
 </html>
-
