@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PodcastApp</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="brand">🎙️ PodcastApp</h1>
+  </header>
+
+  <main>
+    <h2 id="listHeading" class="sr-only">Podcast Shows</h2>
+    <div id="cards" class="grid" role="list" aria-labelledby="listHeading"></div>
+  </main>
+
+  <!-- Modal mount point -->
+  <div id="modal-root"></div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
+
